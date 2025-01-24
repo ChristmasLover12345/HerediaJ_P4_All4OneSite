@@ -8,4 +8,4 @@ async function helloFetch()
     return data
 }
 
-helloFetch()
+export { helloFetch }
