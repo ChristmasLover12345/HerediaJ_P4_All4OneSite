@@ -575,6 +575,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .inline-flex {
     display: inline-flex;
   }
@@ -592,6 +595,9 @@
   }
   .h-\[8vh\] {
     height: 8vh;
+  }
+  .h-\[40\%\] {
+    height: 40%;
   }
   .h-\[55px\] {
     height: 55px;
@@ -620,6 +626,9 @@
   .w-\[80\] {
     width: 80;
   }
+  .w-\[90\%\] {
+    width: 90%;
+  }
   .w-\[132px\] {
     width: 132px;
   }
@@ -628,6 +637,12 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .max-w-\[123px\] {
+    max-width: 123px;
+  }
+  .max-w-\[200px\] {
+    max-width: 200px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -665,6 +680,17 @@
   .justify-self-center {
     justify-self: center;
   }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .overflow-auto {
+    overflow: auto;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
   .rounded-\[5px\] {
     border-radius: 5px;
   }
@@ -689,6 +715,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
   }
   .text-\[40px\] {
     font-size: 40px;
@@ -764,6 +793,21 @@
       margin-inline-start: calc(var(--spacing) * 2);
     }
   }
+  .sm\:h-\[60px\] {
+    @media (width >= 40rem) {
+      height: 60px;
+    }
+  }
+  .sm\:h-\[75px\] {
+    @media (width >= 40rem) {
+      height: 75px;
+    }
+  }
+  .sm\:w-\[132px\] {
+    @media (width >= 40rem) {
+      width: 132px;
+    }
+  }
   .sm\:grid-cols-9 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(9, minmax(0, 1fr));
@@ -777,6 +821,41 @@
   .sm\:grid-rows-\[20px_1fr_1fr_1fr_1fr_1fr_1fr_20px_8vh\] {
     @media (width >= 40rem) {
       grid-template-rows: 20px 1fr 1fr 1fr 1fr 1fr 1fr 20px 8vh;
+    }
+  }
+  .sm\:gap-1 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 1);
+    }
+  }
+  .lg\:h-\[75px\] {
+    @media (width >= 64rem) {
+      height: 75px;
+    }
+  }
+  .lg\:w-\[132px\] {
+    @media (width >= 64rem) {
+      width: 132px;
+    }
+  }
+  .lg\:text-\[13px\] {
+    @media (width >= 64rem) {
+      font-size: 13px;
+    }
+  }
+  .lg\:text-\[14px\] {
+    @media (width >= 64rem) {
+      font-size: 14px;
+    }
+  }
+  .lg\:text-\[16px\] {
+    @media (width >= 64rem) {
+      font-size: 16px;
+    }
+  }
+  .lg\:text-\[20px\] {
+    @media (width >= 64rem) {
+      font-size: 20px;
     }
   }
 }
