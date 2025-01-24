@@ -6,3 +6,4 @@ THINGS TO CHANGE FROM THE FIGMA:
 Thing different from figma on purpose:
 1. added buttons to pages that needed them (adding numbers and asking questions etc)
 2. made a computer output window for, well, computer output
+3. Addeed greater than less than since it was missing from the figma

@@ -32,5 +32,12 @@ async function GTLTFetch(num1, num2)
     return data
 }
 
+async function MADLIBFetch( Object, holiday, place, relative, animal, food, color, pluralNoun, adjective, weather)
+{
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/MadLib/MadLib/${Object}/${holiday}/${place}/${relative}/${animal}/${food}/${color}/${pluralNoun}/${adjective}/${weather}`)
+    const data = await promise.text()
+    console.log(data)
+    return data
+}
 
-export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch }
+export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch }
