@@ -1,0 +1,9 @@
+/* Text stroke since the tailwind stroke doesnt seem to work for some reason */
+.juanStroke
+{
+    text-shadow: 
+    -1px -1px 0 black, 
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;   
+}
