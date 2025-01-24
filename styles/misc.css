@@ -7,3 +7,11 @@
     -1px 1px 0 black,  
     1px 1px 0 black;   
 }
+
+.juanButton 
+{
+    border-bottom-color: white;
+    border-right-color: white;
+    border-top-color: black ;
+    border-left-color:black ;
+}
