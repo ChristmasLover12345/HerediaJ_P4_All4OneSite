@@ -593,6 +593,9 @@
   .row-start-9 {
     grid-row-start: 9;
   }
+  .row-end-1 {
+    grid-row-end: 1;
+  }
   .row-end-3 {
     grid-row-end: 3;
   }
@@ -668,6 +671,12 @@
   .h-\[42px\] {
     height: 42px;
   }
+  .h-\[50\%\] {
+    height: 50%;
+  }
+  .h-\[60px\] {
+    height: 60px;
+  }
   .h-\[65px\] {
     height: 65px;
   }
@@ -676,12 +685,6 @@
   }
   .h-\[8vh\] {
     height: 8vh;
-  }
-  .h-\[50\%\] {
-    height: 50%;
-  }
-  .h-\[60px\] {
-    height: 60px;
   }
   .h-\[75px\] {
     height: 75px;
@@ -1073,6 +1076,9 @@
   }
   .text-\[50px\] {
     font-size: 50px;
+  }
+  .text-\[60px\] {
+    font-size: 60px;
   }
   .font-\[40px\] {
     --tw-font-weight: 40px;

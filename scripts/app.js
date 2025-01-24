@@ -40,4 +40,13 @@ async function MADLIBFetch( Object, holiday, place, relative, animal, food, colo
     return data
 }
 
-export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch }
+async function oddFetch(number)
+{
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/OddOrEven/OddOrEven/${number}`)
+    const data = await promise.text()
+    console.log(data)
+    return data
+}
+
+
+export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch }
