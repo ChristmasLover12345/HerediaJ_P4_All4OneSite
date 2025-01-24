@@ -24,4 +24,13 @@ async function AskFetch(userName, wokeAt)
     return data
 }
 
-export { helloFetch, AddTwoFetch, AskFetch }
+async function GTLTFetch(num1, num2)
+{
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/GreaterLessThan/GTLT/${num1}/${num2}`)
+    const data = await promise.text()
+    console.log(data)
+    return data
+}
+
+
+export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch }

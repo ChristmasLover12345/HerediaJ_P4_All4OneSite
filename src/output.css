@@ -554,6 +554,9 @@
   .col-start-5 {
     grid-column-start: 5;
   }
+  .col-end-1 {
+    grid-column-end: 1;
+  }
   .col-end-3 {
     grid-column-end: 3;
   }
@@ -1039,6 +1042,11 @@
       grid-column-start: 2;
     }
   }
+  .sm\:col-start-3 {
+    @media (width >= 40rem) {
+      grid-column-start: 3;
+    }
+  }
   .sm\:col-start-5 {
     @media (width >= 40rem) {
       grid-column-start: 5;
@@ -1052,6 +1060,11 @@
   .sm\:col-end-3 {
     @media (width >= 40rem) {
       grid-column-end: 3;
+    }
+  }
+  .sm\:col-end-5 {
+    @media (width >= 40rem) {
+      grid-column-end: 5;
     }
   }
   .sm\:col-end-6 {
@@ -1099,6 +1112,11 @@
       width: 80%;
     }
   }
+  .sm\:w-\[90\%\] {
+    @media (width >= 40rem) {
+      width: 90%;
+    }
+  }
   .sm\:w-\[132px\] {
     @media (width >= 40rem) {
       width: 132px;
@@ -1119,6 +1137,16 @@
       gap: calc(var(--spacing) * 1);
     }
   }
+  .sm\:gap-x-3 {
+    @media (width >= 40rem) {
+      column-gap: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:gap-x-5 {
+    @media (width >= 40rem) {
+      column-gap: calc(var(--spacing) * 5);
+    }
+  }
   .sm\:text-\[40px\] {
     @media (width >= 40rem) {
       font-size: 40px;
@@ -1134,9 +1162,24 @@
       font-size: 50px;
     }
   }
+  .sm\:text-\[5-px\] {
+    @media (width >= 40rem) {
+      color: 5-px;
+    }
+  }
   .sm\:text-\[px\] {
     @media (width >= 40rem) {
       color: px;
+    }
+  }
+  .md\:col-start-3 {
+    @media (width >= 48rem) {
+      grid-column-start: 3;
+    }
+  }
+  .md\:col-end-5 {
+    @media (width >= 48rem) {
+      grid-column-end: 5;
     }
   }
   .md\:block {
@@ -1147,6 +1190,26 @@
   .md\:w-\[76\%\] {
     @media (width >= 48rem) {
       width: 76%;
+    }
+  }
+  .md\:w-\[90\%\] {
+    @media (width >= 48rem) {
+      width: 90%;
+    }
+  }
+  .md\:gap-x-3 {
+    @media (width >= 48rem) {
+      column-gap: calc(var(--spacing) * 3);
+    }
+  }
+  .md\:gap-y-1 {
+    @media (width >= 48rem) {
+      row-gap: calc(var(--spacing) * 1);
+    }
+  }
+  .md\:gap-y-3 {
+    @media (width >= 48rem) {
+      row-gap: calc(var(--spacing) * 3);
     }
   }
   .md\:text-\[45px\] {
@@ -1174,9 +1237,39 @@
       width: 132px;
     }
   }
+  .lg\:gap-x-0 {
+    @media (width >= 64rem) {
+      column-gap: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:gap-y-0 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:text-\[13px\] {
     @media (width >= 64rem) {
       font-size: 13px;
+    }
+  }
+  .lg\:text-\[20px\] {
+    @media (width >= 64rem) {
+      font-size: 20px;
+    }
+  }
+  .xl\:text-\[16px\] {
+    @media (width >= 80rem) {
+      font-size: 16px;
+    }
+  }
+  .xl\:text-\[20px\] {
+    @media (width >= 80rem) {
+      font-size: 20px;
+    }
+  }
+  .xl\:text-\[25px\] {
+    @media (width >= 80rem) {
+      font-size: 25px;
     }
   }
 }
