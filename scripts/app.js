@@ -8,7 +8,7 @@ async function helloFetch()
     return data
 }
 
-async function AddTwo(num1, num2)
+async function AddTwoFetch(num1, num2)
 {
     const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/AddingTwo/AddTwo/${num1}/${num2}`)
     const data = await promise.text()
@@ -16,4 +16,12 @@ async function AddTwo(num1, num2)
     return data
 }
 
-export { helloFetch, AddTwo }
+async function AskFetch(userName, wokeAt)
+{
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/AskingQuestions/AskingYourName/${userName}/${wokeAt}`)
+    const data = await promise.text()
+    console.log(data)
+    return data
+}
+
+export { helloFetch, AddTwoFetch, AskFetch }

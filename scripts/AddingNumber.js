@@ -1,4 +1,4 @@
-import { AddTwo } from "./app.js";
+import { AddTwoFetch } from "./app.js";
 
 let num1Input = document.getElementById("num1Input")
 let num2Input = document.getElementById("num2Input")
@@ -12,7 +12,7 @@ magicBtn.addEventListener('click', async () => {
     if (num1Input.value != "" && num2Input.value != "")
     {
         
-        let data = await AddTwo(num1Input.value, num2Input.value)
+        let data = await AddTwoFetch(num1Input.value, num2Input.value)
         totalNum.innerText = data
 
     }
