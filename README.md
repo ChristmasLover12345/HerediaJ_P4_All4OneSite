@@ -19,3 +19,5 @@ Thing different from figma on purpose:
 4. removed guess it  
 5. contained the content of MadLib in a box so the user doesnt have to scroll the entire page
 6. the background crops with width change, that way it isn't squished together on smaller resolutions
+
+figma link: https://www.figma.com/design/AemWEtzyK8RU0MdYulOfCG/Untitled?t=wxaXMl20xVbUWVY8-0
