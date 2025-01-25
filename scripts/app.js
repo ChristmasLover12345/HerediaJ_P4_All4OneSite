@@ -56,5 +56,13 @@ async function reverseAlphaFetch(word)
     return data
 }
 
+async function reverseNumsFetch(number)
+{
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/ReverseItNumbers/ReverseNumber/${number}`)
+    const data = await promise.text()
+    console.log(data)
+    return data
+}
 
-export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch, reverseAlphaFetch }
+
+export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch, reverseAlphaFetch, reverseNumsFetch }
