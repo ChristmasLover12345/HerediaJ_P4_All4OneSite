@@ -48,5 +48,13 @@ async function oddFetch(number)
     return data
 }
 
+async function reverseAlphaFetch(word)
+{
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/ReverseItAlpha/ReverseAlpha/${word}`)
+    const data = await promise.text()
+    console.log(data)
+    return data
+}
 
-export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch }
+
+export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch, reverseAlphaFetch }
