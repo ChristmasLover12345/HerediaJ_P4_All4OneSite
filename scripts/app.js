@@ -64,5 +64,13 @@ async function reverseNumsFetch(number)
     return data
 }
 
+async function magicFetch(userQuestion)
+{
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/Magic8Ball/MagicBall/${userQuestion}`)
+    const data = await promise.text()
+    console.log(data)
+    return data
+}
 
-export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch, reverseAlphaFetch, reverseNumsFetch }
+
+export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch, reverseAlphaFetch, reverseNumsFetch, magicFetch }
