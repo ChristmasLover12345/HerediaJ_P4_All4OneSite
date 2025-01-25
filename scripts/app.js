@@ -72,5 +72,13 @@ async function magicFetch(userQuestion)
     return data
 }
 
+async function RestaurantFetch(userChoice)
+{
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/RestaurantPicker/RestaurantPicker/${userChoice}`)
+    const data = await promise.text()
+    console.log(data)
+    return data
+}
 
-export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch, reverseAlphaFetch, reverseNumsFetch, magicFetch }
+
+export { helloFetch, AddTwoFetch, AskFetch, GTLTFetch, MADLIBFetch, oddFetch, reverseAlphaFetch, reverseNumsFetch, magicFetch, RestaurantFetch }
