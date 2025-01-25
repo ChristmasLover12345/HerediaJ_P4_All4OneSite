@@ -16,4 +16,6 @@ Thing different from figma on purpose:
 1. added buttons to pages that needed them (adding numbers and asking questions etc)
 2. made a computer output window for, well, computer output
 3. Addeed greater than less than since it was missing from the figma
-4. contained the content of madd lib in a box so the user doesnt have to scroll the entire page
+4. removed guess it  
+5. contained the content of MadLib in a box so the user doesnt have to scroll the entire page
+6. the background crops with width change, that way it isn't squished together on smaller resolutions
