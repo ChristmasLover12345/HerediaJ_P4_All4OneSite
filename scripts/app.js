@@ -1,8 +1,8 @@
 
 
-async function helloFetch()
+async function helloFetch(userName)
 {
-    const promise = await fetch("https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/HelloWorld/HelloWorld")
+    const promise = await fetch(`https://jherediaall41apis-e2gkayhtajhkdhb6.westus-01.azurewebsites.net/HelloWorld/HelloWorld/${userName}`)
     const data = await promise.text()
     console.log(data)
     return data
